@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services") version "4.3.15" apply false
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -49,4 +49,11 @@ dependencies {
     // Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
     implementation("com.google.firebase:firebase-analytics-ktx")
+
+    //Real time Database
+    implementation("com.google.firebase:firebase-database-ktx")
+
+    //Firebase Firestore
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
 }
